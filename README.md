@@ -1,23 +1,25 @@
-# captcha-security-analysis
-Security analysis of text-based CAPTCHAs, including preprocessing, segmentation, ML/OCR attacks, and proposed methods to strengthen CAPTCHA robustness
-CAPTCHA Security Analysis (Bachelor Project)
-This project focuses on analyzing the security of text-based CAPTCHAs.
-The work is divided into three main stages: preprocessing, segmentation, and character recognition.
+# CAPTCHA Security Analysis (MATLAB)
 
-In the implementation part, I tested a simple numeric CAPTCHA using MATLAB.
-I applied steps such as grayscaling, noise removal, binary conversion, and character extraction.
-The MATLAB model reached 100% accuracy on the test images because the CAPTCHA set was small, numeric, and had very limited noise.
+## Overview
+Analysis of text-based CAPTCHAs, tested on university self-service samples. Highlights vulnerabilities and proposes improvements for machine-resistant yet human-friendly CAPTCHAs.
 
-In the analytical part, I reviewed how different machine-learning and OCR-based attacks work, including methods used for segmenting characters (like vertical projection and edge-based techniques).
-I also looked at common character confusions (e.g., O/0, d/c/1, L/I) and explained why segmentation is usually the hardest step for a machine.
+## Pipeline
+1. **Preprocessing:** Grayscale conversion, binarization, noise removal.
+2. **Segmentation:** Detect character boundaries using vertical projection and edge-based methods.
+3. **Recognition:** Template-based OCR for numeric CAPTCHAs (A-Z, 0-9) using MATLAB.
 
-The project provides several suggestions for improving CAPTCHA robustness—such as adding background distortion, using colored characters, or increasing segmentation difficulty while keeping the CAPTCHA still readable for humans.
+## Security Recommendations
+- Avoid confusing characters (O/0, D/C/1).  
+- Use colored characters for human readability.  
+- Add background noise and anti-segmentation techniques.  
+- Balance security and usability.
 
-The goal of the project is to highlight the weaknesses of simple CAPTCHAs and give practical ideas for designing more secure and user-friendly versions
-/README.md
-/matlab/
-    solver.m
-    readLetter.m
-    (any other MATLAB files)
-/docs/ (optional)
-    project.pdf
+## Dataset
+- `/letters_numbers/` — character templates  
+- `/samples/` — tested CAPTCHAs
+
+## MATLAB Implementation
+- `/src/main.m`, `lines.m`, `read_letter.m`, `create_templates.m`
+
+## Contact
+**marjan.jamaliii@gmail.com**
