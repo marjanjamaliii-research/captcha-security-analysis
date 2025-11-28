@@ -1,11 +1,12 @@
 # CAPTCHA Security Analysis (Numbers Only)
-## Overview
-This project analyzes numeric CAPTCHA security. The goal is to study the main layers:
-1. Preprocessing: grayscale conversion, noise removal, binarization.
-2. Segmentation: detecting individual digits using vertical projection and edge analysis.
-3. Recognition: matching digits to templates using correlation.
 
-We also suggest improvements to increase security while keeping human readability.
+## Overview
+This project analyzes numeric CAPTCHA security using MATLAB. 
+It includes:
+1. **Preprocessing**: grayscale conversion, noise removal, binarization.
+2. **Segmentation & Recognition**: identifying individual digits and matching them to templates.
+
+Improvements are suggested to increase security while keeping human readability.
 ---
 ## MATLAB Implementation
 - Code files in `src/`:
@@ -21,7 +22,9 @@ We also suggest improvements to increase security while keeping human readabilit
 1. Open MATLAB and set current folder to project root.
 2. Run `create_templates.m` first to generate templates.
 3. Run `main.m` to analyze sample CAPTCHA images.
-4. The recognized digits will be saved in `text.txt`.
+4. The recognized digits will be saved in `text.txt` automatically.
+
+> **Note:** Output files (like `text.txt`) are not included in the repo. Running the code generates them.
 ---
 ## Contact
 **marjan.jamaliii@gmail.com**
