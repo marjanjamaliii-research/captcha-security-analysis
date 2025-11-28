@@ -14,3 +14,10 @@ I also looked at common character confusions (e.g., O/0, d/c/1, L/I) and explain
 The project provides several suggestions for improving CAPTCHA robustness—such as adding background distortion, using colored characters, or increasing segmentation difficulty while keeping the CAPTCHA still readable for humans.
 
 The goal of the project is to highlight the weaknesses of simple CAPTCHAs and give practical ideas for designing more secure and user-friendly versions
+/README.md
+/matlab/
+    solver.m
+    readLetter.m
+    (any other MATLAB files)
+/docs/ (optional)
+    project.pdf
